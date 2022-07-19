@@ -1,12 +1,12 @@
 import openpyxl
 
 
-class HomePageData:
+class HomePageData:     ## class name has to be pascle type
 
-    test_HomePage_data = [{"firstname":"Rahul","lastname":"shetty","gender":"Male"}, {"firstname":"Anshika", "lastname":"shetty", "gender":"Female"}]
+    test_HomePage_data = [{"firstname":"Sagar","lastname":"Sarade","gender":"Male"}, {"firstname":"Yusuf", "lastname":"Tamboli", "gender":"Male"}]
 
     @staticmethod
-    def getTestData(test_case_name):
+    def getTestData(test_case_name):        # method name has to be camel case
         Dict = {}
         book = openpyxl.load_workbook("C:/UserData.xlsx")
         sheet = book.active
